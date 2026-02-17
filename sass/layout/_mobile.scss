@@ -1,0 +1,33 @@
+//mq mobile 
+/*mq mobile*/
+@media (max-width:576px){
+    .contenedor-principal{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        .imagen-perfil{
+            img{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .educacion-grid{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        .certificado{
+            img{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+        .texto-educacion{
+            width: 100%;
+        }
+    }
+    .experiencia-flex{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+}

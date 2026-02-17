@@ -1,0 +1,21 @@
+//reset 
+@use "base/reset";
+
+//home 
+@use "pages/home";
+
+//experiencia
+@use "pages/experiencia";
+
+//educacion 
+@use "pages/educacion";
+
+//mq tablet 
+@use "layout/tablet";
+
+//mq mobile 
+@use "layout/mobile";
+
+
+
+

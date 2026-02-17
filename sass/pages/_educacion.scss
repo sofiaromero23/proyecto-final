@@ -1,0 +1,27 @@
+//variables 
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+/*educacion.html*/
+/*main*/
+.educacion-grid{
+    display: grid;
+    align-items: center;
+    background-color: whitesmoke;
+    .texto-educacion{
+        display: grid;
+        justify-self: center;
+        text-align: center;
+
+    }
+    .certificado{
+        img{
+        width: 100%;
+        max-width: 800px;
+        }
+    }
+
+
+}
+
+

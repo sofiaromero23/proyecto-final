@@ -1,0 +1,180 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilos generales */
+body {
+  font-family: "roboto", sans-serif;
+}
+
+/*desktop*/
+.contenedor-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+/*header*/
+header .tomato-bg {
+  background-color: hsl(230, 95%, 59%);
+}
+header .tomato-bg li a:hover {
+  background-color: rgb(59, 146, 218);
+}
+header .tomato-bg li a:active {
+  background-color: white;
+  color: rgb(30, 0, 165);
+}
+
+/*main*/
+main {
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+main .imagen-perfil {
+  display: flex;
+  justify-content: center;
+}
+main .imagen-perfil img {
+  width: 50%;
+}
+main .textos {
+  text-align: center;
+  width: 40%;
+}
+main .textos h2 span {
+  display: block;
+}
+
+/*section*/
+section.redes {
+  background-color: whitesmoke;
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+section.redes .icono {
+  text-align: center;
+  width: 200px;
+}
+section.redes .icono a img {
+  width: 60px;
+  height: auto;
+  transition: transform 0, 3s ease, filter 0, 3s ease;
+}
+section.redes .icono a img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/*footer*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(59, 146, 218);
+  padding: 20px;
+}
+
+/*experiencia.html*/
+.experiencia-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.experiencia-flex .imagen-experiencia img {
+  width: 100%;
+  height: auto;
+}
+
+/*educacion.html*/
+/*main*/
+.educacion-grid {
+  display: grid;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.educacion-grid .texto-educacion {
+  display: grid;
+  justify-self: center;
+  text-align: center;
+}
+.educacion-grid .certificado img {
+  width: 100%;
+  max-width: 800px;
+}
+
+/*mq tablet*/
+@media (max-width: 992px) {
+  .contenedor-principal {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .contenedor-principal .imagen-perfil img {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .educacion-grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    text-align: left;
+  }
+  .educacion-grid .certificado img {
+    max-width: 100%;
+  }
+  .experiencia-flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .experiencia-flex .imagen-experiencia img {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+/*mq mobile*/
+@media (max-width: 576px) {
+  .contenedor-principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .contenedor-principal .imagen-perfil img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .educacion-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .educacion-grid .certificado img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .educacion-grid .texto-educacion {
+    width: 100%;
+  }
+  .experiencia-flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

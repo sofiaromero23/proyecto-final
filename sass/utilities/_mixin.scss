@@ -1,0 +1,27 @@
+//mixin hibrido, tiene parmetros y valores base
+//desktop
+@mixin desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+//header 
+@mixin header{
+    .tomato-bg{
+        background-color:hsl(230, 95%, 59%);
+    }
+    .tomato-bg li a:hover{
+        background-color: rgb(59, 146, 218);
+    }
+    .tomato-bg li a:active{
+        background-color: white;
+        color: rgb(30, 0, 165)
+    }
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,75 @@
+//variables 
+@use "../utilities/variables" as *;
+//mixin 
+@use "../utilities/mixin" as *;
+
+/*desktop*/
+.contenedor-principal{
+    @include desktop 
+}
+
+/*header*/
+header{
+    @include header
+}
+
+/*main*/
+main{
+    color: blue;
+    @include flex;
+    justify-content: center;
+    background-color: whitesmoke; 
+
+    .imagen-perfil{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 50%;
+        }
+    }
+    .textos{
+        text-align: center;
+        width: 40%;
+        h2{
+            span{
+                display: block;
+            }
+        }
+    }
+
+}
+
+/*section*/
+section.redes{
+    background-color: whitesmoke;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    .icono{
+        text-align: center;
+        width: 200px;
+       a{
+        img{
+            width: 60px;
+            height: auto;
+            transition: transform 0,3s ease, filter 0,3s ease;
+            &:hover{
+                transform: scale(1.1);
+                filter: brightness(1.2);
+                }
+            }
+       }
+    }
+}
+/*footer*/
+footer{
+    @include flex;
+    justify-content: center;
+    background-color: $color-secundario;
+    padding: 20px;
+}
+

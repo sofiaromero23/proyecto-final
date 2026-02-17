@@ -1,0 +1,18 @@
+//variables 
+@use "../utilities/variables" as *;
+//mixin
+@use "../utilities/mixin" as *;
+
+/*experiencia.html*/
+.experiencia-flex{
+    @include flex;
+    gap: 20px;
+    padding: 20px;
+    .imagen-experiencia{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+}

@@ -1,0 +1,40 @@
+//mq tablet 
+/*mq tablet*/
+@media (max-width:992px){
+    .contenedor-principal{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        .imagen-perfil{
+            img{
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .educacion-grid{
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 40px;
+        padding: 50px;
+        text-align: left;
+        .certificado{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    .experiencia-flex{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        .imagen-experiencia{
+            img{
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
